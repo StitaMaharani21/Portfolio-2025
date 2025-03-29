@@ -24,7 +24,7 @@ body {
     padding: 10px 20px;
     font-size: large;
     font-weight: bold;
-    width: 20vh;
+    width: 150px;
     text-align: center;
     margin-left: 10px;
 }
@@ -34,7 +34,7 @@ body {
     padding: 10px 20px;
     font-size: large;
     font-weight: bold;
-    width: 30vh;
+    width: 200px;
     text-align: center;
 }
 
@@ -78,6 +78,22 @@ body {
     font-size: 20px;
     line-height: 1.6;
     text-align: justify;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+.badge {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
 }
 
 
