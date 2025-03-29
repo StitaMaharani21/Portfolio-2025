@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-green {
+    background-color: #AEFD00;
+    color: black;
+}
+
+.btn-grey {
+    background-color: #454446;
+    color: white;
+}
+
+.btn-custom {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    width: 20vh;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.btn-custom2 {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    width: 30vh;
+    text-align: center;
+}
+
+.navbar ul {
+    gap: 20px;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .btn-custom {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.btn-green:hover {
+    background-color: #454446;
+    color: white;
+}
+
+.btn-grey:hover {
+    background-color: #AEFD00;
+    color: black;
+}
+
+.black-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.profile {
+    max-width: 100%;
+}
+
+.about-me-text {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
