@@ -53,11 +53,11 @@
                         <h1 class="display-3 mb-3">About Me</h1>
                         <p class="about-me-text">I am a final year computer science student in Bina Nusantara University who has completed my thesis and is awaiting graduation. During college I developed a specialization in Digital Creative Technology, which is developing creative design ideas and application. I'm passionate about web development, UI/UX design, and System Analyst. </p>
                         <p class="about-me-text">During my studies, I have produced several interesting digital projects. I also participated in a 1-year internship program as a System Analyst and Full-stack Developer. Through this academic and internship experience, I have developed skills in collecting user needs, designing solutions, creating UI/UX designs, developing programs, and conducting user testing.</p>
-                        <button class="btn btn-green btn-custom2 mt-2">Download CV</button>
+                        <button class="btn btn-green btn-custom2 mt-2" onclick="downloadPDF();">Download CV</button>
                     </div> 
             
                     <div class="d-flex justify-content-center">
-                        <img src="Assets/Mask group.png" alt="Profile Picture" class="img-fluid profile">
+                        <img src="Assets/mask-group.png" alt="Profile Picture" class="img-fluid profile">
                     </div>
                 </div>
             </div>
@@ -298,6 +298,10 @@
 
         function scrollToContact() {
             document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function downloadPDF() {
+            window.location.href = 'files/cv.pdf';
         }
     </script>
 </body>
