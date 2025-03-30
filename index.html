@@ -17,11 +17,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
-                    <li class="nav-item"><button class="nav-link btn btn-green btn-custom" href="#">Contact</button></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><button class="nav-link btn btn-green btn-custom" onclick="scrollToContact();">Contact</button></li>
                 </ul>
             </div>
         </div>
@@ -38,8 +38,7 @@
                             Hi, I’m Tita, I write code, solve problems, and build awesome digital experiences
                         </h1>
                         <div class="d-flex flex-column flex-lg-row gap-3 mt-4">
-                            <button class="btn btn-green btn-custom2 px-4 py-2">Explore Portfolio</button>
-                            <button class="btn btn-grey btn-custom px-4 py-2">Contact</button>
+                            <button class="btn btn-green btn-custom2 px-4 py-2" onclick="scrollToAbout();">Explore Portfolio</button>
                         </div>
                     </div>
                 </div>
@@ -47,24 +46,24 @@
         </div>
         
 
-        <div class="container my-5 py-5">
+        <div class="container my-5 py-5" id="about">
             <div class="row">
-                <div class="d-flex flex-column flex-lg-row gap-5 mt-5">
-                    <div class="d-flex flex-column">
+                <div class="d-flex flex-column flex-lg-row gap-5 mt-5 align-items-center h-100">
+                    <div class="d-flex flex-column text-lg-start h-100">
                         <h1 class="display-3 mb-3">About Me</h1>
-                        <p class="about-me-text">I am a final year computer science student in Bina Nusantara University who has completed my thesis and is awaiting graduation. During college I developed a specialization in Digital Creative Technology, which is developing creative design ideas and application. I have an interest in becoming a website developer, UI/UX Designer, and System Analyst. </p>
-                        <p class="about-me-text">During my studies, I have produced several interesting digital projects. I also participated in a 1-year internship program as a System Analyst and UI/UX Designer. Through this academic and internship experience, I have developed skills in collecting user needs, designing solutions, creating UI/UX designs, developing programs, and conducting user testing.</p>
+                        <p class="about-me-text">I am a final year computer science student in Bina Nusantara University who has completed my thesis and is awaiting graduation. During college I developed a specialization in Digital Creative Technology, which is developing creative design ideas and application. I'm passionate about web development, UI/UX design, and System Analyst. </p>
+                        <p class="about-me-text">During my studies, I have produced several interesting digital projects. I also participated in a 1-year internship program as a System Analyst and Full-stack Developer. Through this academic and internship experience, I have developed skills in collecting user needs, designing solutions, creating UI/UX designs, developing programs, and conducting user testing.</p>
                         <button class="btn btn-green btn-custom2 mt-2">Download CV</button>
                     </div> 
-        
-                    <div class="d-flex flex-column">
-                        <img src="Assets/mask group.png" alt="" class="img-fluid profile">
+            
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/mask group.png" alt="Profile Picture" class="img-fluid profile">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container my-5 py-5">
+        <div class="container my-5 py-5" id="experience">
             <!-- Education Section -->
             <h1 class="display-3 text-white">Education</h1>
             <div class="card bg-dark text-white p-3">
@@ -106,52 +105,50 @@
         </div>
 
 
-        <div class="container my-5 py-5">
-            <h2 class="text-white text-center">Tools That Supports My Work</h2>
-            <div class="row justify-content-center align-items-center text-center mt-5">
+        <div class="container my-5 py-5" id="tools">
+            <h2 class="text-white text-center">Tools That Support My Work</h2>
+        
+            <div class="row justify-content-center text-center mt-5">
                 <!-- First row of logos -->
-                <div class="col-4 col-sm-2 my-5">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/c-logo.png" alt="C Language Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-5">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/html-logo.png" alt="HTML Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-5">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/css-logo.png" alt="CSS Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-5">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/js-logo.png" alt="JavaScript Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-5">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/mysql-logo.png" alt="MySQL Logo" class="img-fluid logo">
                 </div>
-            </div>
 
-
-            <div class="row justify-content-center align-items-center text-center">
-                <!-- Second row of logos -->
-                <div class="col-4 col-sm-2 my-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/laravel-logo.png" alt="Laravel Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/bootstrap-logo.png" alt="Bootstrap Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/github-logo.png" alt="GitHub Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/figma-logo.png" alt="Figma Logo" class="img-fluid logo">
                 </div>
-                <div class="col-4 col-sm-2 my-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-5 logo-pop">
                     <img src="assets/xd-logo.png" alt="Adobe XD Logo" class="img-fluid logo">
                 </div>
-                
             </div>
         </div>
+        
+        
 
-        <div class="container my-5">
+        <div class="container my-5" id="project">
             <h2 class="text-center">My Projects</h2>
-            <p class="text-center">Here are some projects that I built using various tools.</p>
+            <p class="text-center mb-5">Here are some projects that I built using various tools.</p>
         
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 col-12">
@@ -159,7 +156,7 @@
                         <img src="assets/p1.png" class="card-img-top" alt="Project 1">
                         <div class="card-body h-100">
                             <h5 class="card-title fw-semibold">Employee Training Management Website - SA and Fullstack Developer</h5>
-                            <p class="card-text">This website is a project that I worked on during my internship at Polytron, and also as my thesis topic. This website was built using Laravel version 5.</p>
+                            <p class="card-text">This program was created to record employee training requests and implementation at Polytron. In this project, I had a role as a system analyst and full-stack developer to design the concept and develop the program using Laravel.</p>
                         </div>
                     </div>
                 </div>
@@ -169,8 +166,8 @@
                         <img src="assets/p2.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title fw-semibold">Goods Stock Website - Fullstack Developer</h5>
-                            <p class="card-text">This website is the final project of the internship training at Polytron related to understanding programming using PHP Native.</p>
-                            <a href="#" class="text-white">Project Link →</a>
+                            <p class="card-text">This program is a final test of PHP Native during the internship training at Polytron. This program was developed to record the entry and exit of stock goods using FIFO logic.</p>
+                            <a href="https://github.com/StitaMaharani21/tugas-akhir" class="text-white">Project Link →</a>
                         </div>
                     </div>
                 </div>
@@ -180,8 +177,8 @@
                         <img src="assets/p3.png" class="card-img-top" alt="Project 3">
                         <div class="card-body">
                             <h5 class="card-title fw-semibold">Propansenta - UI Designer</h5>
-                            <p class="card-text">This project is a project that I worked on when I became a freelancer. I was asked to do the design and rebranding of PPTPRO digital products.</p>
-                            <a href="#" class="text-white ">Project Link →</a>
+                            <p class="card-text">Proprasenta is a project that I worked on as a freelance UI designer. In this project, I was responsible to develop a landing page design for the rebranding of my previous business, PPTPRO. I worked this design using Figma.</p>
+                            <a href="https://pptpro-template.com/proprasenta" class="text-white ">Project Link →</a>
                         </div>
                     </div>
                 </div>
@@ -191,20 +188,75 @@
                         <img src="assets/p4.png" class="card-img-top" alt="Project 4">
                         <div class="card-body">
                             <h5 class="card-title fw-semibold">Purrfect Pet Sitter - UI/UX Designer</h5>
-                            <p class="card-text">This project is the final project of the entrepreneurship market validation course, where my team and I were encouraged to showcase our business idea at a Binus event.</p>
-                            <a href="#" class="text-white">Project Link →</a>
+                            <p class="card-text">This project is an assignment from the Entrepreneurship course which is required to develop a business idea in the form of a digital product. In this project I was assigned the responsibility to organize ideas, develop UI/UX designs, and conduct product testing.</p>
+                            <a href="https://www.behance.net/gallery/222600249/PURRRFECT-MOBILE-APP" class="text-white">Project Link →</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-        
+    </section>
+
+    <section class="white-section" id="contact">
+        <div class="container my-5">
+            <h2 class="display-1 fw-bold">Contact</h2>
+            <h3 class="text-muted">Reach me via email or social media below</h3>
+            
+
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <h6 class="text-muted">Personal E-mail</h6>
+                    <p><a href="mailto:stitamaharanigst@gmail.com" class="text-dark fw-bold">stitamaharanigst@gmail.com</a></p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h6 class="text-muted">LinkedIn</h6>
+                    <p><a href="https://www.linkedin.com/in/stita-maharani" class="text-dark fw-bold">www.linkedin.com/in/stita-maharani</a></p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h6 class="text-muted">WhatsApp Number</h6>
+                    <p><a href="https://wa.me/082145287612" class="text-dark fw-bold">+62 821-4528-7612</a></p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h6 class="text-muted">GitHub</h6>
+                    <p><a href="https://github.com/StitaMaharani21" class="text-dark fw-bold">https://github.com/StitaMaharani21</a></p>
+                </div>
+            </div>
+        </div>
     </section>
     
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">PORTFOLIO</h5>
+                </div>
+                <div class="col-md-8 mb-3">
+                    <ul class="list-unstyled text-md-end ">
+                        <li class="d-block d-md-inline me-3"><a href="#about" class="text-light text-decoration-none">About Me</a></li>
+                        <li class="d-block d-md-inline me-3"><a href="#experience" class="text-light text-decoration-none">Experience</a></li>
+                        <li class="d-block d-md-inline me-3"><a href="#tools" class="text-light text-decoration-none">Tools</a></li>
+                        <li class="d-block d-md-inline me-3"><a href="#project" class="text-light text-decoration-none">Project</a></li>
+                        <li class="d-block d-md-inline me-3"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mb-3">
+                <p class="mb-0">&copy; 2025 I Gusti Ayu Ngurah Stita Maharani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToAbout() {
+            document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>

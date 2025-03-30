@@ -70,6 +70,12 @@ body {
     padding: 50px 0;
 }
 
+.white-section {
+    background-color: #AEFD00;
+    color: black;
+    padding: 50px 0;
+}
+
 .profile {
     max-width: 100%;
 }
@@ -92,9 +98,46 @@ body {
 }
 
 .logo {
-    width: 80px;
+    max-width: 100px;
     height: auto;
 }
+
+/* Ukuran untuk tablet (≤ 768px) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 90px;
+    }
+}
+
+/* Ukuran untuk HP (≤ 576px) */
+@media (max-width: 576px) {
+    .logo {
+        max-width: 70px;
+    }
+}
+
+/* Ukuran untuk HP kecil (≤ 400px) */
+@media (max-width: 400px) {
+    .logo {
+        max-width: 60px;
+    }
+}
+
+.logo-pop:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+}
+
+
+
+
+
+
 
 
 
